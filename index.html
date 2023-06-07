@@ -4,20 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio" />
+
+    <!-- External Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+
     <title>Dhananjay Shitkar</title>
   </head>
+
   <body class="light" id="top">
+    <!-- Header -->
     <header class="header center">
       <h3>
         <a href="https://github.com/dshitkar" class="link"
@@ -25,10 +34,12 @@
         >
       </h3>
 
+      <!-- Navigation -->
       <nav class="nav center">
         <ul class="nav__list center">
+          <!-- Navigation Links -->
           <li class="nav__list-item">
-            <a class="link link--nav" href="#about center">About</a>
+            <a class="link link--nav" href="#about">About</a>
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#projects">Projects</a>
@@ -41,10 +52,12 @@
           </li>
         </ul>
 
+        <!-- Theme Toggle Button -->
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
           <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
         </button>
 
+        <!-- Hamburger Button -->
         <button
           type="button"
           aria-label="toggle navigation"
@@ -55,8 +68,9 @@
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-      <!-- About -->
+      <!-- About Section -->
       <div class="about center">
         <h1>Hi, I am <span class="about__name">Dhananjay Shitkar.</span></h1>
         <h2 class="about__role">Portland State University 2024.</h2>
@@ -68,6 +82,7 @@
           read and write poetry, play video games, and hang out with my cat.
         </p>
 
+        <!-- Smaller Contact Information -->
         <div class="about__contact center">
           <a href="Dhananjay Shitkar - Resume.pdf">
             <span class="btn btn--outline">Resume</span>
@@ -91,11 +106,12 @@
         </div>
       </div>
 
-      <!-- Projects -->
+      <!-- Projects Section -->
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
+          <!-- Project 1: HermPDX -->
           <div class="project">
             <h3>HermPDX</h3>
             <p class="project__description">
@@ -118,6 +134,7 @@
             </a>
           </div>
 
+          <!-- Project 2: birvin -->
           <div class="project">
             <h3>birvin</h3>
             <p class="project__description">
@@ -138,6 +155,7 @@
             </a>
           </div>
 
+          <!-- Project 3: AIDT-->
           <div class="project">
             <h3>AIDT</h3>
             <p class="project__description">
@@ -155,7 +173,7 @@
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- Skills Section -->
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
@@ -172,15 +190,7 @@
         </ul>
       </section>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:dshitkar@pdx.edu">
-          <span class="btn btn--outline">Send Dhananjay an email!</span>
-        </a>
-      </section>
-
-      <!-- Contact -->
+      <!-- Contact Section -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
         <form class="contact-form">
@@ -201,12 +211,14 @@
       </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
       <a href="https://github.com/dshitkar" class="link footer__link">
         Dhananjay Shitkar - Portfolio Website - PSU2024
       </a>
     </footer>
 
+    <!-- Scroll to Top Button -->
     <div class="scroll-container">
       <div class="scroll-top">
         <a aria-label="Scroll up" href="#top">
@@ -215,6 +227,7 @@
       </div>
     </div>
 
+    <!-- JavaScript -->
     <script src="./script.js"></script>
   </body>
 </html>
