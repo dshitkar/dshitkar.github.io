@@ -35,6 +35,7 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
 2. Navigate to the project directory: `cd your-repo`
 3. Open the `index.html` file in your preferred web browser.
+4. The site is also deployed at dshitkar.github.io
 
 ## Usage
 
