@@ -28,8 +28,8 @@ body {
 
 /* Light theme styles */
 .light {
-  --clr-bg: #bfd7e9;
-  --clr-bg-alt: #bfd7e9;
+  --clr-bg: #ffffff;
+  --clr-bg-alt: #ffffff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
