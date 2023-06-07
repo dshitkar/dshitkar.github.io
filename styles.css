@@ -1,6 +1,4 @@
-/*===============
-  global styles
-===============*/
+/*== Global Styles ==*/
 
 * {
   padding: 0;
@@ -15,10 +13,12 @@
   box-sizing: border-box;
 }
 
+/* Enable smooth scrolling behavior */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base styles for the body */
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
@@ -26,6 +26,7 @@ body {
   background-color: var(--clr-bg);
 }
 
+/* Light theme styles */
 .light {
   --clr-bg: #bfd7e9;
   --clr-bg-alt: #bfd7e9;
@@ -35,6 +36,7 @@ body {
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+/* Dark theme styles */
 .dark {
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
@@ -56,6 +58,7 @@ body {
   color: var(--clr-bg);
 }
 
+/* Heading styles */
 h1,
 h2,
 h3,
@@ -80,14 +83,17 @@ h4 {
   font-size: 1.3rem;
 }
 
+/* Remove bullet points from unordered lists */
 ul {
   list-style-type: none;
 }
 
+/* Remove default link underline */
 a {
   text-decoration: none;
 }
 
+/* Set cursor style for buttons */
 button {
   cursor: pointer;
 }
@@ -98,10 +104,9 @@ button {
   }
 }
 
-/*===================
-  buttons and links
-===================*/
+/*== Buttons and Links ===*/
 
+/* Link styles */
 .link {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
@@ -128,17 +133,20 @@ button {
   width: 100%;
 }
 
+/* Navigation link styles */
 .link--nav {
   color: var(--clr-fg);
   text-transform: lowercase;
   font-weight: 500;
 }
 
+/* Icon link styles */
 .link--icon {
   color: var(--clr-fg);
   font-size: 1.2rem;
 }
 
+/* Button styles */
 .btn {
   display: block;
   padding: 0.8em 1.4em;
@@ -148,6 +156,7 @@ button {
   transition: transform 0.2s ease-in-out;
 }
 
+/* Button with outline styles */
 .btn--outline {
   color: var(--clr-primary);
   border: 2px solid var(--clr-primary);
@@ -178,6 +187,7 @@ button {
   right: 0;
 }
 
+/* Plain button styles */
 .btn--plain {
   text-transform: initial;
   background-color: var(--clr-bg-alt);
@@ -189,6 +199,7 @@ button {
   transform: translateY(-4px);
 }
 
+/* Icon button styles */
 .btn--icon {
   padding: 0;
   font-size: 1.2rem;
@@ -203,15 +214,15 @@ button {
   transform: translateY(-5px);
 }
 
-/*========
-  layout
-========*/
+/*== Layout ==*/
 
+/* Flex centering utility class */
 .center {
   display: flex;
   align-items: center;
 }
 
+/* Header styles */
 .header {
   height: 8em;
   max-width: 1100px;
@@ -250,6 +261,7 @@ main {
   width: 1em;
 }
 
+/* About section styles */
 .about {
   flex-direction: column;
   margin-top: 3em;
@@ -281,6 +293,7 @@ main {
   margin-right: 1em;
 }
 
+/* Projects grid styles */
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
@@ -289,6 +302,7 @@ main {
   grid-gap: 2em;
 }
 
+/* Project item styles */
 .project {
   padding: 2em;
   margin: 0 auto;
@@ -323,6 +337,7 @@ main {
   margin-left: 0.5em;
 }
 
+/* Skills list styles */
 .skills__list {
   max-width: 450px;
   width: 95%;
@@ -336,10 +351,12 @@ main {
   margin: 0.5em;
 }
 
+/* Contact section styles */
 .contact {
   flex-direction: column;
 }
 
+/* Footer styles */
 .footer {
   padding: 3em 0;
   margin-top: 4em;
@@ -352,6 +369,7 @@ main {
   color: var(--clr-fg);
 }
 
+/* Scroll top button styles */
 .scroll-top {
   display: none;
   position: fixed;
@@ -362,6 +380,7 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+/* Responsive styles */
 @media (max-width: 600px) {
   .header {
     height: 6em;

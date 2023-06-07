@@ -1,35 +1,46 @@
+// Selecting the body element and buttons for theme and hamburger menu
 const body = document.body;
-
 const btnTheme = document.querySelector(".fa-moon");
 const btnHamburger = document.querySelector(".fa-bars");
 
+// Function to add theme class to body and button
 const addThemeClass = (bodyClass, btnClass) => {
   body.classList.add(bodyClass);
   btnTheme.classList.add(btnClass);
 };
 
+// Get theme classes
 const getBodyTheme = localStorage.getItem("portfolio-theme");
 const getBtnTheme = localStorage.getItem("portfolio-btn-theme");
 
+// Add theme classes to body and button
 addThemeClass(getBodyTheme, getBtnTheme);
 
+// Check if the current theme is dark
 const isDark = () => body.classList.contains("dark");
 
+// Function to set the theme
 const setTheme = (bodyClass, btnClass) => {
+  // Remove previous theme classes
   body.classList.remove(localStorage.getItem("portfolio-theme"));
   btnTheme.classList.remove(localStorage.getItem("portfolio-btn-theme"));
 
+  // Add new theme classes
   addThemeClass(bodyClass, btnClass);
 
+  // Store theme classes in local storage
   localStorage.setItem("portfolio-theme", bodyClass);
   localStorage.setItem("portfolio-btn-theme", btnClass);
 };
 
+// Toggle between dark and light themes
 const toggleTheme = () =>
   isDark() ? setTheme("light", "fa-moon") : setTheme("dark", "fa-sun");
 
+// Event listener for theme toggle button
 btnTheme.addEventListener("click", toggleTheme);
 
+// Function to display or hide the navigation menu
 const displayList = () => {
   const navUl = document.querySelector(".nav__list");
 
@@ -44,8 +55,10 @@ const displayList = () => {
   }
 };
 
+// Event listener for hamburger menu button
 btnHamburger.addEventListener("click", displayList);
 
+// Function to show or hide the scroll-to-top button
 const scrollUp = () => {
   const btnScrollTop = document.querySelector(".scroll-top");
 
@@ -56,8 +69,10 @@ const scrollUp = () => {
   }
 };
 
+// Event listener for scroll event
 document.addEventListener("scroll", scrollUp);
 
+// Function to handle form submission
 const contactForm = document.querySelector(".contact-form");
 
 const submitForm = (event) => {
@@ -74,4 +89,5 @@ const submitForm = (event) => {
   contactForm.reset();
 };
 
+// Event listener for form submission
 contactForm.addEventListener("submit", submitForm);
