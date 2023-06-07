@@ -3,6 +3,7 @@
 Welcome to my portfolio website! This website showcases my skills, projects, and contact information. It is designed to provide an overview of my experience and abilities to potential employers or anyone interested in learning more about me.
 
 ## Table of Contents
+
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Outside Sources](#outside-sources)
@@ -22,9 +23,12 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 - CSS3
 - JavaScript
 
-##Outside Sources
+## Outside Sources
 
 - Help received from existing threads from StackOverflow and Google.
+- Tutorial: CSS Grid Layout on MDN Web Docs
+- Tutorial: Introduction to Local Storage on MDN Web Docs
+- Stack Overflow: Smooth Scroll to Anchor with JavaScript thread
 
 ## Installation
 
